@@ -1,5 +1,8 @@
 package Calculator;
 
+/**
+ *
+ */
 public class Calculator {
     public Double mean(){
         return null;
