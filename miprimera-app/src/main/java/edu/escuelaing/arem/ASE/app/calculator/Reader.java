@@ -1,8 +1,8 @@
-package Calculator;
-
-import LinkedList.LinkedList;
+package edu.escuelaing.arem.ASE.app.calculator;
 
 import java.io.*;
+
+import edu.escuelaing.arem.ASE.app.linkedList.LinkedList;
 
 /**
  *Clase para la lectura e imprmimir el calculo de la media y la desviación estandar

@@ -1,7 +1,7 @@
 package edu.escuelaing.arem.ASE.app;
 
-import Calculator.Reader;
-import LinkedList.LinkedList;
+import edu.escuelaing.arem.ASE.app.calculator.Reader;
+import edu.escuelaing.arem.ASE.app.linkedList.LinkedList;
 
 import java.io.File;
 /**

@@ -1,6 +1,6 @@
-package Calculator;
+package edu.escuelaing.arem.ASE.app.calculator;
 
-import LinkedList.LinkedList;
+import edu.escuelaing.arem.ASE.app.linkedList.LinkedList;
 
 /**
  * Clase que realiza los calculos de la medio y la desviacion estandar

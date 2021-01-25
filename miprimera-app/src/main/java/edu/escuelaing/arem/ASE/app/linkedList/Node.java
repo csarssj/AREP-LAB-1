@@ -1,4 +1,4 @@
-package LinkedList;
+package edu.escuelaing.arem.ASE.app.linkedList;
 /**
  * Implementacion clase nodo
  * @author ceseg
