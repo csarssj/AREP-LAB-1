@@ -10,9 +10,26 @@ import edu.escuelaing.arem.ASE.app.linkedList.LinkedList;
  * @author Ceseg
  */
 public class Reader {
-    public Reader(){};
+    private Calculator calculator;
+    private Double mean;
+    private Double mean2;
+    private Double des;
+    private Double des2;
+
+    public Reader(){
+        calculator = new Calculator();
+        mean = new Double (0);
+        mean2 = new Double (0);
+        des = new Double (0);
+        des2  = new Double (0);
+    };
+
+    /**
+     * Metodo encargado de la impresion del calculo de la media y la desviasion
+     *
+     * @param file archivo a leer
+     */
     public void fileReader(File file){
-        Calculator cal = new Calculator();
         LinkedList col1 = new LinkedList();
         LinkedList col2 = new LinkedList();
         BufferedReader br = null;
@@ -27,16 +44,46 @@ public class Reader {
                 col2.append(second);
             }
             br.close();
-            Double mean = cal.mean(col1);
-            Double mean2 = cal.mean(col2);
-            Double des = cal.desviationStandar(col1);
-            Double des2 = cal.desviationStandar(col2);
+            mean = calculator.mean(col1);
+            mean2 = calculator.mean(col2);
+            des = calculator.desviationStandar(col1);
+            des2 = calculator.desviationStandar(col2);
             System.out.println("La media calculada es: "+String.format("%.2f",mean)+" con una desviacion de: "+String.format("%.2f",des));
             System.out.println("La media calculada es: "+String.format("%.2f",mean2)+" con una desviacion de: "+String.format("%.2f",des2));
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public Double getMean() {
+        return mean;
+    }
 
+    public void setMean(Double mean) {
+        this.mean = mean;
+    }
+
+    public Double getMean2() {
+        return mean2;
+    }
+
+    public void setMean2(Double mean2) {
+        this.mean2 = mean2;
+    }
+
+    public Double getDes() {
+        return des;
+    }
+
+    public void setDes(Double des) {
+        this.des = des;
+    }
+
+    public Double getDes2() {
+        return des2;
+    }
+
+    public void setDes2(Double des2) {
+        this.des2 = des2;
     }
 }
