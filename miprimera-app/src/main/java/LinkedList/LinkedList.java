@@ -78,4 +78,5 @@ public class LinkedList {
         }
         return output;
     }
+    public int getSize(){return size;}
 }

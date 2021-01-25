@@ -12,6 +12,7 @@ import java.io.*;
 public class Reader {
     public Reader(){};
     public void fileReader(File file){
+        Calculator cal = new Calculator();
         LinkedList col1 = new LinkedList();
         LinkedList col2 = new LinkedList();
         BufferedReader br = null;
@@ -26,8 +27,12 @@ public class Reader {
                 col2.append(second);
             }
             br.close();
-            System.out.println(col1);
-            System.out.println(col2);
+            Double mean = cal.mean(col1);
+            Double mean2 = cal.mean(col2);
+            Double des = cal.desviationStandar(col1);
+            Double des2 = cal.desviationStandar(col2);
+            System.out.println("La media calculada es: "+String.format("%.2f",mean)+" con una desviacion de: "+String.format("%.2f",des));
+            System.out.println("La media calculada es: "+String.format("%.2f",mean2)+" con una desviacion de: "+String.format("%.2f",des2));
         } catch (IOException e) {
             e.printStackTrace();
         }
