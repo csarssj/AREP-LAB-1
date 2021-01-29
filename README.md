@@ -17,20 +17,21 @@ mvn package
 
 ```
 
-*insertar imagen*
+![image](https://github.com/csarssj/AREP-LAB-1/blob/master/resources/resources/compilado.png)
 
 
 
 Una vez compilado el programa esta listo para su uso, el último paso es ejecutar el programa por medio del siguiente comando en consola:
 
 ```
-java -cp target/calculator-1.0-SNAPSHOT.jar edu.escuelaing.arsw.app.main "Ruta del archivo"
+java -cp target/miprimera-app-1.0-SNAPSHOT.jar edu.escuelaing.arem.ASE.app.App "Ruta del archivo"
 
 ```
 
 A continuación un ejemplo:
 
-*insertar imagen*
+![image](https://github.com/csarssj/AREP-LAB-1/blob/master/resources/compilado.png)
+
 
 
 ### Prerequisitos
@@ -46,53 +47,9 @@ Este proyecto necesita tener los siguientes progamas instalados en la máquina d
 
 El sistema, mas alla de facilitar el registro de las iniciativas e ideas de proyectos, es una valiosa base de conocimiento donde los diferentes actores pueden revisar si hay iniciativas, ideas o intereses similares y aunar esfuerzos para la materializacion.
 
-### Diagrama de clases
+### Diagrama de clases y Reporte de pruebas
 
-![image](https://github.com/csarssj/AREP-LAB-1/blob/master/resources/diseño.png)
-
-En el paquete llamado *LinkedList* se implemento una versión diferente a la que viene en el API de Java, se crearon dos clases en ese paquete para poder hacer uso de los metodos 
-que normalmente son utilizados con las LinkedList:
-
-```
-  * LinkedList
-  * Node
-```
-* En *LinkedList* se encuentran las operaciones básicas que hacen las listas enlazadas en java, agregar,remover,getSize,Iterator e IsEmpty.
-* En *Node* se encuentra el construtor de los nodos que son los encargados de almacenar los datos en las LinkedList.
-
-En el paquete *Calculator* y *App* se encuentra el servicio principal que ofrece el programa el cual es calcular la media y la desviación estandar por medio de archivos de texto que son 
-administrados por el usuario. Se encuentran las siguientes clases.
-
-```
-  * Calculator
-  * Reader
-  * Main
-```
-
-* En *Main* se hace el llamado por el cual se ejecutan el resto de clases.
-* En *Reader* se lee el archivo en columnas las cuales se leen como tuplas, para poder diferenciar a cual de las dos LinkedList se agregarán los datos correspondientes y hace uso
-de la clase Calculator para calcular e imprimir los resultados.
-* En *Calculator* se hacen las operaciones necesarias para poder calcular la media y la desviación estandar de los datos administrados.
-
-## Reporte de pruebas
-A continuación se muestra un reporte de las pruebas realizadas en el programa, las cuales se realizaron con los siguientes casos:
-
-*insertar imagen*
-
-*insertar imagen*
-
-Se realizaron un total de 17 pruebas donde se busco comprobar que se calcularan los datos pedidos con exactitud, con casos como "deberiaHallar" y "deberiaFallar"
-
-*insertar imagen*
-
-se ejecutan a través del siguiente comando en consola:
-
-```
-mvn test
-```
-
-*insertar imagen*
-
+![Se encuentran en este documento](https://github.com/csarssj/AREP-LAB-1/blob/master/diseño.pdf)
 
 
 ## Construido en
