@@ -17,7 +17,7 @@ mvn package
 
 ```
 
-![image](https://github.com/csarssj/AREP-LAB-1/blob/master/resources/resources/compilado.png)
+![image](https://github.com/csarssj/AREP-LAB-1/blob/master/resources/compilado.png)
 
 
 
@@ -49,7 +49,7 @@ El sistema, mas alla de facilitar el registro de las iniciativas e ideas de proy
 
 ### Diagrama de clases y Reporte de pruebas
 
-![Se encuentran en este documento](https://github.com/csarssj/AREP-LAB-1/blob/master/diseño.pdf)
+![Se encuentran en este documento](https://github.com/csarssj/AREP-LAB-1/blob/master/Dise%C3%B1o.pdf)
 
 
 ## Construido en
