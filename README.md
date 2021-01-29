@@ -48,9 +48,7 @@ El sistema, mas alla de facilitar el registro de las iniciativas e ideas de proy
 
 ### Diagrama de clases
 
-*insertar imagen*
-
-*insertar imagen*
+![image](https://github.com/csarssj/AREP-LAB-1/blob/master/resources/diseño.png)
 
 En el paquete llamado *LinkedList* se implemento una versión diferente a la que viene en el API de Java, se crearon dos clases en ese paquete para poder hacer uso de los metodos 
 que normalmente son utilizados con las LinkedList:
