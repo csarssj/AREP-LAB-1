@@ -23,8 +23,12 @@ mvn package
 
 Una vez compilado el programa esta listo para su uso, el último paso es ejecutar el programa por medio del siguiente comando en consola:
 
+(primero ubicarse en la carpeta "miprimera-app" con el comando cd miprimera-app"
+
 ```
-java -cp target/miprimera-app-1.0-SNAPSHOT.jar edu.escuelaing.arem.ASE.app.App "Ruta del archivo"
+java -cp target/miprimera-app-1.0-SNAPSHOT.jar edu.escuelaing.arem.ASE.app.App "Ruta del archivo" 
+
+en este ejemplo la ruta del archivo simplemente ese numeros.txt
 
 ```
 
@@ -59,7 +63,7 @@ El sistema, mas alla de facilitar el registro de las iniciativas e ideas de proy
 
 ## Control de versiones 
 
-[Csarssj](https://github.com/csarssj) para el versionamiento.
+[Github](https://github.com/) para el versionamiento.
 
 ## Authors
 
